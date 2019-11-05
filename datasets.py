@@ -20,7 +20,16 @@ def load_linear_example1():
     >>> model.fit(X, Y)
     >>> model.theta
     array([5.30412371, 0.49484536])
+
+    # testing (cont.)
+    >>> importlib.reload(regression)
+    <module 'regression' from '/Users/jaejinan/PycharmProjects/exp4/regression.py'>
+    >>> model = regression.LinearRegression()
+    >>> model.fit(X, Y)
+    >>> model.predict(X)
+    array([ 7.28350515,  9.2628866 , 11.7371134 , 13.71649485])
     """
+
 
     X = np.array([[1,4],[1,8],[1,13],[1,17]])
     Y = np.array([7,10,11,14])

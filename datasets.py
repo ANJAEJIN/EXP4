@@ -28,6 +28,14 @@ def load_linear_example1():
     >>> model.fit(X, Y)
     >>> model.predict(X)
     array([ 7.28350515,  9.2628866 , 11.7371134 , 13.71649485])
+
+    # testing (cont.)
+    >>> importlib.reload(regression)
+    <module 'regression' from '/Users/jaejinan/PycharmProjects/exp4/regression.py'>
+    >>> model = regression.LinearRegression()
+    >>> model.fit(X, Y)
+    >>> model.score(X, Y)
+    1.2474226804123705
     """
 
 

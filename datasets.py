@@ -36,6 +36,13 @@ def load_linear_example1():
     >>> model.fit(X, Y)
     >>> model.score(X, Y)
     1.2474226804123705
+
+    # testing
+    >>> importlib.reload(regression)
+    <module 'regression' from '/Users/jaejinan/PycharmProjects/exp4/regression.py'>
+    >>> model = regression.RidgeRegression()
+    >>> model.alpha
+    0.1
     """
 
 

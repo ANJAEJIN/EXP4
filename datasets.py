@@ -85,6 +85,13 @@ def polynomial3_features(input):
            [ 1.   ,  4.   , 16.   , 64.   ]])
     >>> Y
     array([4., 0., 3., 2.])
+
+     # testing
+    >>> import regression
+    >>> model = regression.RidgeRegression()
+    >>> model.fit(ex_X, Y)
+    >>> model.theta
+    array([ 3.54259714, -1.24971967, -0.68925104,  0.23695052])
     """
     poly2 = input[:,1:]**2
     poly3 = input[:,1:]**3
